@@ -29,9 +29,7 @@ class App extends React.Component {
     if (total === 0) {
       return 0;
     }
-    {
-      return Math.round((this.state.good * 100) / total);
-    }
+    return Math.round((this.state.good * 100) / total);
   };
 
   render() {
