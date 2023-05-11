@@ -1,0 +1,17 @@
+.feedback__btn_list {
+  display: flex;
+  justify-content: center;
+}
+.feedback__btn {
+  cursor: pointer;
+  transition: 500ms background-color linear;
+}
+
+.feedback__btn:hover {
+  background-color: blue;
+  transition: 500ms background-color linear;
+}
+
+.feedback__btn_item:not(:last-of-type) {
+  margin-right: 10px;
+}
