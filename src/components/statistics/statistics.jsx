@@ -5,11 +5,22 @@ import css from './statistics.module.css';
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
   <div>
     <ul>
-      <li>Good: {good}</li>
-      <li>Neutral: {neutral}</li>
-      <li>Bad: {bad}</li>
-      <li>Total: {total}</li>
-      <li>Positive feedback: {positivePercentage}%</li>
+      <li>
+        Good: <span className={css.staticsics__count}>{good}</span>
+      </li>
+      <li>
+        Neutral: <span className={css.staticsics__count}>{neutral}</span>
+      </li>
+      <li>
+        Bad: <span className={css.staticsics__count}>{bad}</span>
+      </li>
+      <li>
+        Total: <span className={css.staticsics__count}>{total}</span>
+      </li>
+      <li>
+        Positive feedback:{' '}
+        <span className={css.staticsics__count}>{positivePercentage}%</span>
+      </li>
     </ul>
   </div>
 );
